@@ -1,4 +1,3 @@
-
 import java.awt.Color;
 import java.awt.Component;
 import java.awt.Font;
@@ -15,13 +14,14 @@ public class Test extends JFrame {
  
          /**
 	 * should i add the serialVersionUID
+	 * some update in server
 	 */
 	private static final long serialVersionUID = -812565268515911417L;
 
 		public Test() {
                   
                    super("Test",GraphicsEnvironment.getLocalGraphicsEnvironment().getDefaultScreenDevice().getDefaultConfiguration());
-                   MoveLabel label = new MoveLabel("´øÓÐ¹ö¶¯Ð§¹ûµÄ±êÇ©");
+                   MoveLabel label = new MoveLabel("å¸¦æœ‰æ»šåŠ¨æ•ˆæžœçš„æ ‡ç­¾");
                    this.add(label);
  
                    Test.removeListener(this);
@@ -51,7 +51,7 @@ public class Test extends JFrame {
          }
  
          /**
-          * ´øÓÐ¹ö¶¯Ð§¹ûµÄLabel±êÇ©
+          * å¸¦æœ‰æ»šåŠ¨æ•ˆæžœçš„Labelæ ‡ç­¾
           */
          private class MoveLabel extends JPanel implements Runnable{
  
@@ -72,7 +72,7 @@ public class Test extends JFrame {
                             super();
                             this.text = text;
                             this.setBackground(Color.BLACK);
-                            this.setFont(new Font("ËÎÌå", Font.PLAIN, 300));
+                            this.setFont(new Font("å®‹ä½“", Font.PLAIN, 300));
                             this.setForeground(Color.red);
                             this.setIgnoreRepaint(false);
                            
@@ -86,7 +86,7 @@ public class Test extends JFrame {
                      }
                     
                    /*
-                    * »æÖÆ
+                    * ç»˜åˆ¶
                     */
                    protected void paintComponent(Graphics g) {
                            
@@ -106,7 +106,7 @@ public class Test extends JFrame {
                                      }
                                      this.repaint();
                                      try {
-                                               Thread.sleep(16);//¼ä¸ô»æÖÆ16ºÁÃë
+                                               Thread.sleep(16);//é—´éš”ç»˜åˆ¶16æ¯«ç§’
                                      } catch (InterruptedException e) {
                                                e.printStackTrace();
                                      }
