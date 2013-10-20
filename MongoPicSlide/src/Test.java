@@ -14,7 +14,7 @@ import javax.swing.JPanel;
 public class Test extends JFrame {
  
          /**
-	 * 
+	 * should i add the serialVersionUID
 	 */
 	private static final long serialVersionUID = -812565268515911417L;
 
