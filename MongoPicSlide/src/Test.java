@@ -13,7 +13,12 @@ import javax.swing.JPanel;
  
 public class Test extends JFrame {
  
-         public Test() {
+         /**
+	 * 
+	 */
+	private static final long serialVersionUID = -812565268515911417L;
+
+		public Test() {
                   
                    super("Test",GraphicsEnvironment.getLocalGraphicsEnvironment().getDefaultScreenDevice().getDefaultConfiguration());
                    MoveLabel label = new MoveLabel("带有滚动效果的标签");
@@ -50,7 +55,12 @@ public class Test extends JFrame {
           */
          private class MoveLabel extends JPanel implements Runnable{
  
-                   private String text = null;
+                   /**
+			 * 
+			 */
+			private static final long serialVersionUID = 6700959096170094323L;
+
+				private String text = null;
  
                    private Thread thread = null;
  
